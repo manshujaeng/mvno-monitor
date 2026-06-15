@@ -1,14 +1,4 @@
 {
-  "6981": {
-    "productId": 6981,
-    "partnerName": "아이즈모바일",
-    "productName": "[L]5G 데이터150GB+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 24100,
-    "data": 150,
-    "contractDiscountPeriod": 24
-  },
   "6980": {
     "productId": 6980,
     "partnerName": "아이즈모바일",
@@ -47,26 +37,6 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 19950,
     "data": 125,
-    "contractDiscountPeriod": 24
-  },
-  "6971": {
-    "productId": 6971,
-    "partnerName": "아시아모바일",
-    "productName": "아시아 5G 통화기본 150GB+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 26400,
-    "data": 150,
-    "contractDiscountPeriod": 24
-  },
-  "6966": {
-    "productId": 6966,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 24개월 할인 모음) 6월 통신비 감량 프로젝트",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 25600,
-    "data": 100,
     "contractDiscountPeriod": 24
   },
   "6912": {
