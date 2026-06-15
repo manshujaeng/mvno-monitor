@@ -17,5 +17,11 @@ html = requests.get(
     }
 ).text
 
-print(len(html))
-print(html[:1000])
+#print(len(html))
+#print(html[:1000])
+
+print("핀다" in html)
+print("모나" in html)
+print("아이즈" in html)
+print("100GB" in html)
+print("150GB" in html)
