@@ -131,17 +131,16 @@ def check_changes(previous, current):
 
 
 def main():
-    send_telegram("GitHub Actions 테스트\n\n알뜰폰 모니터링이 정상 동작합니다.")
-    #current = get_products()
+    #send_telegram("GitHub Actions 테스트\n\n알뜰폰 모니터링이 정상 동작합니다.")
+    current = get_products()
+    previous = load_state()
 
-    #previous = load_state()
+    if previous:
+        check_changes(previous, current)
+    else:
+        print("최초 실행 - 상태파일 생성")
 
-    #if previous:
-    #    check_changes(previous, current)
-    #else:
-    #    print("최초 실행 - 상태파일 생성")
-
-    #save_state(current)
+    save_state(current)
 
 
 if __name__ == "__main__":
