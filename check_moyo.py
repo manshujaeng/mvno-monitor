@@ -5,11 +5,15 @@ import re
 url = (
     "https://www.moyoplan.com/plans"
     "?filters.data.includeUnlimited=true"
-    "&filters.data.ranges.0.min=30"
-    "&filters.discounts.ranges.0.min=24"
-    "&filters.lowestFee.ranges.0.max=30000"
+    "&filters.data.ranges.0.max=0&filters.data.ranges.0.min=30"
+    #"&filters.discounts.excludeLifetimeDiscount=false"
+    #"&filters.discounts.includeNoDiscount=false"
+    "&filters.discounts.ranges.0.max=9999&filters.discounts.ranges.0.min=24"
+    #"&filters.lowestFee.maxUnbounded=false"
+    "&filters.lowestFee.ranges.0.max=30000&filters.lowestFee.ranges.0.min=0"
     "&page.page=0"
     "&page.size=100"
+    #"&sort=RECOMMEND"
 )
 
 html = requests.get(
