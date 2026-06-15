@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 import requests
 
 url = (
@@ -26,6 +27,24 @@ html = requests.get(
 #print("100GB" in html)
 #print("150GB" in html)
 
-idx = html.find("핀다")
-print(idx)
-print(html[idx-1000:idx+2000])
+#idx = html.find("핀다")
+#print(idx)
+#print(html[idx-1000:idx+2000])
+
+soup = BeautifulSoup(html, "html.parser")
+
+for a in soup.find_all("a", href=True):
+
+    href = a["href"]
+
+    if href.startswith("/plans/"):
+
+        print("ID:", href)
+
+        text = a.get_text(" ", strip=True)
+
+        print(text[:500])
+
+        print("=" * 100)
+
+        break
