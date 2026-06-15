@@ -29,6 +29,9 @@ GitHub Actions (매일 오전 9시)
 
 # 구조
 mvno-monitor/
- ├─ check_mvno.py
- ├─ known_products.json
- └─ requirements.txt
+├─ check_mvno.py
+├─ requirements.txt
+├─ known_products.json
+└─ .github/
+   └─ workflows/
+      └─ mvno.yml
