@@ -21,7 +21,7 @@ def send_telegram(message: str):
             "chat_id": TELEGRAM_CHAT_ID,
             "text": message,
         },
-        timeout=30,
+        timeout=60,
     )
 
 
@@ -50,7 +50,7 @@ def get_products():
                 "User-Agent": "Mozilla/5.0",
                 "Referer": "https://www.mvnohub.kr/product/products.do",
             },
-            timeout=30,
+            timeout=60,
         )
 
         response.raise_for_status()
