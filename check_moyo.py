@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import re
 
 url = (
     "https://www.moyoplan.com/plans"
@@ -33,18 +34,24 @@ html = requests.get(
 
 soup = BeautifulSoup(html, "html.parser")
 
+
+count = 0
 for a in soup.find_all("a", href=True):
-
     href = a["href"]
+    if "/plans/" in href:
+        print(href)
+        count += 1
 
-    if href.startswith("/plans/"):
+print("count =", count)
 
+
+for a in soup.find_all("a", href=True):
+    href = a["href"]
+    if re.match(r"^/plans/\d+$", href):
         print("ID:", href)
-
         text = a.get_text(" ", strip=True)
-
-        print(text[:500])
-
+        print(text[:1000])
         print("=" * 100)
-
         break
+
+
