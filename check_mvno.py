@@ -117,73 +117,31 @@ def format_product(p):
 
 def check_changes(previous, current):
 
-    # 신규 상품
     for product_id, product in current.items():
 
+        # 신규 상품
         if product_id not in previous:
-            print("🆕 신규 요금제 발견\n\n" + format_product(product))
-            #send_telegram("🆕 신규 요금제 발견\n\n" + format_product(product))
-
-    # 변경 감지
-    for product_id, product in current.items():
-
-        if product_id not in previous:
+            #print("[알뜰폰허브] 🆕 신규 요금제 발견\n\n" + format_product(product))
+            send_telegram("[알뜰폰허브]\n\n🆕 신규 요금제 발견\n\n" + format_product(product))
             continue
 
-        old = previous[product_id]
-
-        # 가격 인하
-        if product["monthlyPaymentFee"] < old["monthlyPaymentFee"]:
-
-            #send_telegram(
-            print(
-                "⬇️ 가격 인하\n\n"
-                f"{product['partnerName']}\n"
-                f"{product['productName']}\n\n"
-                f"{old['monthlyPaymentFee']:,}원 → "
-                f"{product['monthlyPaymentFee']:,}원"
-            )
-
-        # 데이터 증가
-        if product["data"] > old["data"]:
-
-            #send_telegram(
-            print(
-                "📈 데이터 증가\n\n"
-                f"{product['partnerName']}\n"
-                f"{product['productName']}\n\n"
-                f"{old['data']}GB → "
-                f"{product['data']}GB"
-            )
-
-        # 할인기간 증가
-        if (
-            product["contractDiscountPeriod"]
-            > old["contractDiscountPeriod"]
-        ):
-
-            #send_telegram(
-            print(
-                "🎁 할인기간 증가\n\n"
-                f"{product['partnerName']}\n"
-                f"{product['productName']}\n\n"
-                f"{old['contractDiscountPeriod']}개월 → "
-                f"{product['contractDiscountPeriod']}개월"
-            )
+        # 변경 여부
+        if product != previous[product_id]:
+            send_telegram("[알뜰폰허브]\n\n🔄 요금제 변경\n\n" + format_product(product))
 
 
 def main():
+    send_telegram("GitHub Actions 테스트\n\n알뜰폰 모니터링이 정상 동작합니다.")
+    #current = get_products()
 
-    current = get_products()
+    #previous = load_state()
 
-    previous = load_state()
+    #if previous:
+    #    check_changes(previous, current)
+    #else:
+    #    print("최초 실행 - 상태파일 생성")
 
-    if previous:
-        check_changes(previous, current)
-    else:
-        print("최초 실행 - 상태파일 생성")
-
-    save_state(current)
+    #save_state(current)
 
 
 if __name__ == "__main__":
