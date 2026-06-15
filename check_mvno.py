@@ -4,7 +4,7 @@ import requests
 
 URL = "https://www.mvnohub.kr/rest/product/search"
 
-STATE_FILE = "known_products.json"
+STATE_FILE = "known_mvno.json"
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
