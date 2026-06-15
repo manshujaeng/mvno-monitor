@@ -1,14 +1,4 @@
 {
-  "6981": {
-    "productId": 6981,
-    "partnerName": "아이즈모바일",
-    "productName": "[L]5G 데이터150GB+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 24100,
-    "data": 150,
-    "contractDiscountPeriod": 24
-  },
   "6980": {
     "productId": 6980,
     "partnerName": "아이즈모바일",
