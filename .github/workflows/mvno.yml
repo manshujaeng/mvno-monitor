@@ -25,12 +25,14 @@ jobs:
       - name: Install packages
         run: pip install -r requirements.txt
 
-      - name: Run monitor
+      - name: Check MVNOHub
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        #run: python check_mvno.py
-        run: python check_moyo.py
+        run: python check_mvno.py
+      
+      - name: Check MOYO
+        run: python check_moyo.py  
 
       - name: Commit state file
         uses: stefanzweifel/git-auto-commit-action@v5
