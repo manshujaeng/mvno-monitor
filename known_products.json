@@ -1,1 +1,132 @@
-{}
+{
+  "6981": {
+    "productId": 6981,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 데이터150GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 24100,
+    "data": 150,
+    "contractDiscountPeriod": 24
+  },
+  "6980": {
+    "productId": 6980,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 데이터125GB+5Mbps",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 23900,
+    "data": 125,
+    "contractDiscountPeriod": 24
+  },
+  "6979": {
+    "productId": 6979,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 아이즈95GB+3Mbps",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 23500,
+    "data": 95,
+    "contractDiscountPeriod": 24
+  },
+  "6976": {
+    "productId": 6976,
+    "partnerName": "에넥스텔레콤",
+    "productName": "◇ A모바일 ◇ A 5G 스페셜 슈퍼 95GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 18720,
+    "data": 95,
+    "contractDiscountPeriod": 24
+  },
+  "6975": {
+    "productId": 6975,
+    "partnerName": "에넥스텔레콤",
+    "productName": "◇ A모바일 ◇ A 5G 스페셜 에센셜 125GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 19950,
+    "data": 125,
+    "contractDiscountPeriod": 24
+  },
+  "6971": {
+    "productId": 6971,
+    "partnerName": "아시아모바일",
+    "productName": "아시아 5G 통화기본 150GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 26400,
+    "data": 150,
+    "contractDiscountPeriod": 24
+  },
+  "6966": {
+    "productId": 6966,
+    "partnerName": "찬스모바일",
+    "productName": "(찬스 24개월 할인 모음) 6월 통신비 감량 프로젝트",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 25600,
+    "data": 100,
+    "contractDiscountPeriod": 24
+  },
+  "6912": {
+    "productId": 6912,
+    "partnerName": "아시아모바일",
+    "productName": "[아시아모바일] LG 6월 이달의 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 26400,
+    "data": 150,
+    "contractDiscountPeriod": 24
+  },
+  "6906": {
+    "productId": 6906,
+    "partnerName": "에넥스텔레콤",
+    "productName": "[Npay2만] A 스페셜 100GB+ (24개월)",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 22990,
+    "data": 100,
+    "contractDiscountPeriod": 24
+  },
+  "6570": {
+    "productId": 6570,
+    "partnerName": "아시아모바일",
+    "productName": "[뷰티바우처 10만원권] 아시아 통화기본 100GB+_24개월",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 28050,
+    "data": 100,
+    "contractDiscountPeriod": 24
+  },
+  "6278": {
+    "productId": 6278,
+    "partnerName": "아시아모바일",
+    "productName": "아시아 5G 통화기본 95GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 26400,
+    "data": 95,
+    "contractDiscountPeriod": 24
+  },
+  "5493": {
+    "productId": 5493,
+    "partnerName": "찬스모바일",
+    "productName": "음성기본 100GB+5Mbps_24개월",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 25600,
+    "data": 100,
+    "contractDiscountPeriod": 24
+  },
+  "5095": {
+    "productId": 5095,
+    "partnerName": "이지모바일",
+    "productName": "U+ LTE 24개월 길~게 할인받자",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 26000,
+    "data": 100,
+    "contractDiscountPeriod": 24
+  }
+}
