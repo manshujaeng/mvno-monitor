@@ -20,8 +20,12 @@ html = requests.get(
 #print(len(html))
 #print(html[:1000])
 
-print("핀다" in html)
-print("모나" in html)
-print("아이즈" in html)
-print("100GB" in html)
-print("150GB" in html)
+#print("핀다" in html)
+#print("모나" in html)
+#print("아이즈" in html)
+#print("100GB" in html)
+#print("150GB" in html)
+
+idx = html.find("핀다")
+print(idx)
+print(html[idx-1000:idx+2000])
