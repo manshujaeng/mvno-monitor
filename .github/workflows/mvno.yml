@@ -2,7 +2,8 @@ name: MVNO Monitor
 
 on:
   schedule:
-    - cron: '0 1 * * *' # 미국1시 한국10시
+    #- cron: '0 1 * * *' # 미국1시 한국10시
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -32,6 +33,9 @@ jobs:
         run: python check_mvno.py
       
       - name: Check MOYO
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python check_moyo.py  
 
       - name: Commit state file
