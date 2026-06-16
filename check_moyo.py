@@ -35,7 +35,7 @@ def send_telegram(message):
 
 
 def format_plan(text):
-    # 맨 앞 별점 제거
+    # 맨 앞 별점 제거 (예: 4.5 /음성기본 100GB+5Mbps_24개월/ 월 100GB + 5Mbps/ 통화 무제한/ 문자 무제한/ LG U+망/ LTE/ 월 25,600원 24개월 이후 47,080원/ 2,269명이 선택)
     text = re.sub(r'^\d+\.\d+\s+', '', text)
 
     # 맨 뒤 "000명이 선택" 제거
@@ -90,10 +90,10 @@ def get_plans():
 
         text = a.get_text(" ", strip=True)
 
-        print(len(text))
-        print(text)
+        #print(len(text))
+        #print(text)
 
-        if len(text) < 20:
+        if len(text) < 20:  # 설명이 짧은건 상품설명이 아니라고 보고 버림?
             continue
 
         plans[href] = text
@@ -123,7 +123,7 @@ def save_current(data):
 def main():
     current = get_plans()
     previous = load_previous()
-    print(f"현재 요금제 수: {len(current)}")
+    #print(f"현재 요금제 수: {len(current)}")
 
     # 신규
     for plan_id, text in current.items():
@@ -133,8 +133,8 @@ def main():
                 f"https://www.moyoplan.com{plan_id}"
             )
 
-            print(message)
-            #send_telegram(message)
+            print(format_plan(message))
+            #send_telegram(format_plan(message))
 
     # 변경
     for plan_id, text in current.items():
@@ -147,11 +147,8 @@ def main():
                 f"https://www.moyoplan.com{plan_id}"
             )
 
-            print(message)
-            #send_telegram(message)
-            #send_telegram(
-    "[모요]\n\n🆕 신규 요금제\n\n"
-    + format_plan(plan_text)
+            print(format_plan(message))
+            #send_telegram(format_plan(message))
 )
 
     save_current(current)
