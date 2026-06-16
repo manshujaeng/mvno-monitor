@@ -33,6 +33,28 @@ def send_telegram(message):
         timeout=30
     )
 
+
+def format_plan(text):
+    # 맨 앞 별점 제거
+    text = re.sub(r'^\d+\.\d+\s+', '', text)
+
+    # 맨 뒤 "000명이 선택" 제거
+    text = re.sub(r'\s+\d[\d,]*명이 선택$', '', text)
+
+    # 줄바꿈
+    text = text.replace(" 월 ", "\n월 ")
+    text = text.replace(" 통화 ", "\n통화 ")
+    text = text.replace(" 문자 ", "\n문자 ")
+    text = text.replace(" LG U+망 ", "\nLG U+망 ")
+    text = text.replace(" KT망 ", "\nKT망 ")
+    text = text.replace(" SKT망 ", "\nSKT망 ")
+    text = text.replace(" LTE ", "\nLTE ")
+    text = text.replace(" 5G ", "\n5G ")
+    #text = text.replace("개월 이후", "\n개월 이후")
+
+    return text
+
+
 def get_plans():
     response = requests.get(
         url,
@@ -127,6 +149,10 @@ def main():
 
             print(message)
             #send_telegram(message)
+            #send_telegram(
+    "[모요]\n\n🆕 신규 요금제\n\n"
+    + format_plan(plan_text)
+)
 
     save_current(current)
 
