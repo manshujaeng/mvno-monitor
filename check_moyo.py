@@ -1,6 +1,8 @@
-from bs4 import BeautifulSoup
+import json
+import os
 import requests
-import re
+from bs4 import BeautifulSoup
+#import re
 
 url = (
     "https://www.moyoplan.com/plans"
@@ -16,46 +18,118 @@ url = (
     #"&sort=RECOMMEND"
 )
 
-html = requests.get(
-    url,
-    headers={
-        "User-Agent": "Mozilla/5.0"
-    }
-).text
+KNOWN_FILE = "known_moyo.json"
 
-#print(len(html))
-#print(html[:1000])
+BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
-#print("핀다" in html)
-#print("모나" in html)
-#print("아이즈" in html)
-#print("100GB" in html)
-#print("150GB" in html)
+def send_telegram(message):
+    requests.post(
+        f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
+        json={
+            "chat_id": CHAT_ID,
+            "text": message
+        },
+        timeout=30
+    )
 
-#idx = html.find("핀다")
-#print(idx)
-#print(html[idx-1000:idx+2000])
+def get_plans():
+    response = requests.get(
+        URL,
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 "
+                "(Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 "
+                "(KHTML, like Gecko) "
+                "Chrome/137.0.0.0 Safari/537.36"
+            )
+        },
+        timeout=60
+    )
 
-soup = BeautifulSoup(html, "html.parser")
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+    plans = {}
 
+    for a in soup.select('a[href^="/plans/"]'):
+        href = a.get("href")
+        if not href:
+            continue
 
-count = 0
-for a in soup.find_all("a", href=True):
-    href = a["href"]
-    if "/plans/" in href:
-        print(href)
-        count += 1
+        # /plans/12345 만 허용
+        parts = href.split("/")
 
-print("count =", count)
+        if len(parts) != 3:
+            continue
 
+        if not parts[2].isdigit():
+            continue
 
-for a in soup.find_all("a", href=True):
-    href = a["href"]
-    if re.match(r"^/plans/\d+$", href):
-        print("ID:", href)
         text = a.get_text(" ", strip=True)
-        print(text[:1000])
-        print("=" * 100)
-        break
+
+        print(len(text))
+        print(text)
+
+        if len(text) < 20:
+            continue
+
+        plans[href] = text
+
+    return plans
 
 
+def load_previous():
+
+    if not os.path.exists(KNOWN_FILE):
+        return {}
+
+    with open(KNOWN_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_current(data):
+    with open(KNOWN_FILE, "w", encoding="utf-8") as f:
+        json.dump(
+            data,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+
+def main():
+    current = get_plans()
+    previous = load_previous()
+    print(f"현재 요금제 수: {len(current)}")
+
+    # 신규
+    for plan_id, text in current.items():
+        if plan_id not in previous:
+            message = ("[모요]\n\n🆕 신규 요금제\n\n"
+                f"{text}\n\n"
+                f"https://www.moyoplan.com{plan_id}"
+            )
+
+            print(message)
+            #send_telegram(message)
+
+    # 변경
+    for plan_id, text in current.items():
+        if plan_id not in previous:
+            continue
+
+        if text != previous[plan_id]:
+            message = ("[모요]\n\n🔄 요금제 정보 변경\n\n"
+                f"{text}\n\n"
+                f"https://www.moyoplan.com{plan_id}"
+            )
+
+            print(message)
+            #send_telegram(message)
+
+    save_current(current)
+
+
+if __name__ == "__main__":
+    main()
