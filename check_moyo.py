@@ -35,7 +35,7 @@ def send_telegram(message):
 
 def get_plans():
     response = requests.get(
-        URL,
+        url,
         headers={
             "User-Agent": (
                 "Mozilla/5.0 "
