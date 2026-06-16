@@ -2,7 +2,7 @@ import json
 import os
 import requests
 from bs4 import BeautifulSoup
-#import re
+import re
 
 url = (
     "https://www.moyoplan.com/plans"
@@ -149,7 +149,6 @@ def main():
 
             print(format_plan(message))
             #send_telegram(format_plan(message))
-)
 
     save_current(current)
 
