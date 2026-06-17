@@ -30,3 +30,13 @@ mvno-monitor/
    └─ workflows/  
       └─ mvno.yml  
 
+# 스케줄 등록 실패
+안내받은 모든 걸 확인해봐도 스케줄 실행이 안되서 토큰을 받아 구글 스크립트로 실행  
+깃허브 우측 상단 프로필 클릭 ➡️ Settings로 이동합니다.  
+왼쪽 최하단의 Developer Settings ➡️ Personal Access Tokens ➡️ Tokens (classic)을 클릭합니다.  
+Generate new token (classic)을 선택합니다.  
+Note에는 GAS-Trigger 같은 이름을 적고, 권한(Scopes)에서 workflow 항목에 체크합니다.  
+아래 Generate token 누르면 나오는 긴 문자열(토큰)을 반드시 복사해서 따로 저장해 두세요. (이 창을 닫으면 다시는 볼 수 없습니다!)  
+
+
+
