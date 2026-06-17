@@ -1,0 +1,17 @@
+name: Test
+
+on:
+  schedule:
+    # 분 시 일 월 요일 (UTC 기준)
+    # 아래 예시는 한국 시간(KST)으로 매일 오전 9시 00분에 실행됩니다. (9시 - 9시간 = 0시)
+    - cron: '*/5 * * * *'
+
+jobs:
+  run-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: 스크립트 실행
+        run: echo "스케줄러가 성공적으로 실행되었습니다!"
