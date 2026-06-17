@@ -2,8 +2,7 @@ name: MVNO Monitor
 
 on:
   schedule:
-    #- cron: '0 1 * * *' # 미국1시 한국10시
-    - cron: '*/15 * * * *'
+    - cron: '10,30,50 * * * *'
   workflow_dispatch:
 
 permissions:
