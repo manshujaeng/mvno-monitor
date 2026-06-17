@@ -19,13 +19,16 @@ GitHub Actions (매일 오전 9시)
          ▼  
 텔레그램 알림  
         ▼  
-현재 결과 저장  
+현재 결과 저장(같은 로직으로 모요도 실행)  
+
 
 # 구조
 mvno-monitor/  
 ├─ check_mvno.py  
+├─ check_moyo.py  
 ├─ requirements.txt  
-├─ known_products.json  
+├─ known_mvno.json  
+├─ known_moyo.json  
 └─ .github/  
    └─ workflows/  
       └─ mvno.yml  
