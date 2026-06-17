@@ -30,7 +30,7 @@ mvno-monitor/
    └─ workflows/  
       └─ mvno.yml  
 
-# 스케줄 등록 실패
+# 스케줄 등록 실패 시
 안내받은 모든 걸 확인해봐도 스케줄 실행이 안되서 토큰을 받아 구글 스크립트로 실행  
 깃허브 우측 상단 프로필 클릭 ➡️ Settings로 이동합니다.  
 왼쪽 최하단의 Developer Settings ➡️ Personal Access Tokens ➡️ Tokens (classic)을 클릭합니다.  
