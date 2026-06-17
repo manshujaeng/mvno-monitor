@@ -129,11 +129,10 @@ def main():
     for plan_id, text in current.items():
         if plan_id not in previous:
             message = ("[모요]\n\n🆕 신규 요금제\n\n"
-                f"{text}\n\n"
+                f"{format_plan(text)}\n\n"
                 f"https://www.moyoplan.com{plan_id}"
             )
-
-            print(format_plan(message))
+            print(message)
             #send_telegram(format_plan(message))
 
     # 변경
@@ -143,11 +142,10 @@ def main():
 
         if text != previous[plan_id]:
             message = ("[모요]\n\n🔄 요금제 정보 변경\n\n"
-                f"{text}\n\n"
+                f"{format_plan(text)}\n\n"
                 f"https://www.moyoplan.com{plan_id}"
             )
-
-            print(format_plan(message))
+            print(message)
             #send_telegram(format_plan(message))
 
     save_current(current)
