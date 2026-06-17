@@ -1,15 +1,42 @@
-name: TEST
+name: MVNO Monitor
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    #- cron: '0 1 * * *' # 미국1시 한국10시
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  run-task:
+  check:
     runs-on: ubuntu-latest
+
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
     steps:
-      - name: 저장소 체크아웃
+
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: 스크립트 실행
-        run: echo "스케줄러가 성공적으로 실행되었습니다!"
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      #- name: Check MVNOHub
+      #  run: python check_mvno.py
+      
+      - name: Check MOYO
+        run: python check_moyo.py  
+
+      - name: Commit state file
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: update mvno state
