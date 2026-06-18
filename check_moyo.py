@@ -33,14 +33,19 @@ def send_telegram(message):
         timeout=30
     )
 
-
-def format_plan(text):
+def clean_plan_text(text):
     # 맨 앞 별점 제거 (예: 4.5 /음성기본 100GB+5Mbps_24개월/ 월 100GB + 5Mbps/ 통화 무제한/ 문자 무제한/ LG U+망/ LTE/ 월 25,600원 24개월 이후 47,080원/ 2,269명이 선택)
-    text = re.sub(r'^\d+\.\d+\s+', '', text)
+    text = re.sub(r'^\d+\.\d+\s+', '', text)          # 문자열 시작(^) 숫자.숫자 뒤에 공백 1개 이상(\s+)
+    #text = re.sub(r'^\s*\d+\.\d+\s*', '', text)      # 문자열 시작  앞 공백 0개 이상  숫자.숫자  뒤 공백 0개 이상
 
     # 맨 뒤 "000명이 선택" 제거
-    text = re.sub(r'\s+\d[\d,]*명이 선택$', '', text)
+    text = re.sub(r'\s+\d[\d,]*명이 선택$', '', text)  # 공백  숫자...명이 선택  문자열 끝($)
+    #text = re.sub(r'\s*\d[\d,]*명이 선택', '', text)  # 어디에 있든 숫자명이 선택
 
+    return text.strip()
+    
+
+def format_plan(text):
     # 줄바꿈
     text = text.replace(" 월 ", "\n월 ")
     text = text.replace(" 통화 ", "\n통화 ")
@@ -96,7 +101,7 @@ def get_plans():
         if len(text) < 20:  # 설명이 짧은건 상품설명이 아니라고 보고 버림?
             continue
 
-        plans[href] = text
+        plans[href] = clean_plan_text(text)  # 앞에 별점과 뒤에 000명이 선택 제거
 
     return plans
 
@@ -132,8 +137,8 @@ def main():
                 f"{format_plan(text)}\n\n"
                 f"https://www.moyoplan.com{plan_id}"
             )
-            #print(message)
-            send_telegram(format_plan(message))
+            print(message)
+            #send_telegram(format_plan(message))
 
     # 변경
     for plan_id, text in current.items():
@@ -145,8 +150,8 @@ def main():
                 f"{format_plan(text)}\n\n"
                 f"https://www.moyoplan.com{plan_id}"
             )
-            #print(message)
-            send_telegram(format_plan(message))
+            print(message)
+            #send_telegram(format_plan(message))
 
     save_current(current)
 
