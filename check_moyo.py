@@ -137,8 +137,8 @@ def main():
                 f"{format_plan(text)}\n\n"
                 f"https://www.moyoplan.com{plan_id}"
             )
-            print(message)
-            #send_telegram(format_plan(message))
+            #print(message)
+            send_telegram(format_plan(message))
 
     # 변경
     for plan_id, text in current.items():
@@ -150,8 +150,8 @@ def main():
                 f"{format_plan(text)}\n\n"
                 f"https://www.moyoplan.com{plan_id}"
             )
-            print(message)
-            #send_telegram(format_plan(message))
+            #print(message)
+            send_telegram(format_plan(message))
 
     save_current(current)
 
