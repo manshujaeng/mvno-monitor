@@ -29,8 +29,8 @@ jobs:
       - name: Install packages
         run: pip install -r requirements.txt
 
-      - name: Check MVNOHub
-        run: python check_mvno.py
+      #- name: Check MVNOHub
+      #  run: python check_mvno.py
       
       - name: Check MOYO
         run: python check_moyo.py  
