@@ -43,18 +43,23 @@ def get_products():
             "sortDirection": "DESC",
         }
 
-        response = requests.get(
-            URL,
-            params=params,
-            headers={
-                "User-Agent": "Mozilla/5.0",
-                "Referer": "https://www.mvnohub.kr/product/products.do",
-            },
-            timeout=60,
-        )
-
-        response.raise_for_status()
-
+        try:
+            response = requests.get(
+                URL,
+                params=params,
+                headers={
+                    "User-Agent": "Mozilla/5.0",
+                    "Referer": "https://www.mvnohub.kr/product/products.do",
+                },
+                timeout=60,
+            )
+            response.raise_for_status()
+        
+        except Exception as e:
+            #print(f"MVNOHub 요청 실패: {e}")
+            send_telegram(f"MVNOHub 요청 실패: {e}")
+            return {}
+        
         content = response.json()["pageResult"]["content"]
 
         if not content:
@@ -133,6 +138,9 @@ def check_changes(previous, current):
 def main():
     #send_telegram("GitHub Actions 테스트\n\n알뜰폰 모니터링이 정상 동작합니다.")
     current = get_products()
+    if not current:  # 상품 조회 실패
+        return
+    
     previous = load_state()
 
     if previous:
