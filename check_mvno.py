@@ -140,7 +140,7 @@ def main():
     current = get_products()
     if not current:  # 상품 조회 실패
         return
-    
+    print(f"현재 요금제 수: {len(current)}")
     previous = load_state()
 
     if previous:
