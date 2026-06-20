@@ -44,6 +44,7 @@ def get_products():
         }
 
         try:
+            print("MVNOHub 요청 시작...")
             response = requests.get(
                 URL,
                 params=params,
@@ -54,9 +55,10 @@ def get_products():
                 timeout=60,
             )
             response.raise_for_status()
+            print(f"MVNOHub 응답 수신: {response.status_code}")
         
         except Exception as e:
-            #print(f"MVNOHub 요청 실패: {e}")
+            print(f"MVNOHub 요청 실패: {type(e).__name__} \n{e}")
             send_telegram(f"MVNOHub 요청 실패: {e}")
             return {}
         
