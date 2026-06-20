@@ -8,7 +8,7 @@ STATE_FILE = "known_mvno.json"
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-
+tele_msg = ""
 
 def send_telegram(message: str):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
@@ -52,7 +52,7 @@ def get_products():
                     "User-Agent": "Mozilla/5.0",
                     "Referer": "https://www.mvnohub.kr/product/products.do",
                 },
-                timeout=60,
+                timeout=120,
             )
             response.raise_for_status()
             print(f"MVNOHub 응답 수신: {response.status_code}")
@@ -123,21 +123,22 @@ def format_product(p):
 
 
 def check_changes(previous, current):
-
+    global tele_msg
     for product_id, product in current.items():
 
         # 신규 상품
         if product_id not in previous:
             #print("[알뜰폰허브] 🆕 신규 요금제 발견\n\n" + format_product(product))
-            send_telegram("[알뜰폰허브]\n\n🆕 신규 요금제 발견\n\n" + format_product(product))
+            tele_msg += "[알뜰폰허브]\n\n🆕 신규 요금제 발견\n\n" + format_product(product)
             continue
 
         # 변경 여부
         if product != previous[product_id]:
-            send_telegram("[알뜰폰허브]\n\n🔄 요금제 변경\n\n" + format_product(product))
+            tele_msg += "[알뜰폰허브]\n\n🔄 요금제 변경\n\n" + format_product(product)
 
 
 def main():
+    global tele_msg
     #send_telegram("GitHub Actions 테스트\n\n알뜰폰 모니터링이 정상 동작합니다.")
     current = get_products()
     if not current:  # 상품 조회 실패
@@ -147,6 +148,10 @@ def main():
 
     if previous:
         check_changes(previous, current)
+        if tele_msg: 
+            send_telegram(tele_msg) # 신규 및 변경 된 요금제 정보 모아서 한번만 전송
+        else:
+            send_telegram('[알뜰폰허브] 신규 및 변경 요금제 정보 없음') 
     else:
         print("최초 실행 - 상태파일 생성")
 
