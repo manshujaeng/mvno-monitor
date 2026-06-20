@@ -23,15 +23,69 @@ KNOWN_FILE = "known_moyo.json"
 BOT_TOKEN = os.environ["TELEGRAM_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
-def send_telegram(message):
-    requests.post(
-        f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-        json={
-            "chat_id": CHAT_ID,
-            "text": message
-        },
-        timeout=30
-    )
+
+def send_telegram(message: str):
+    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+        print(message)
+        return
+
+    chunks = []
+
+    while len(message) > 4000:
+        split_pos = message.rfind("\n", 0, MAX_MESSAGE_LENGTH)
+
+        if split_pos == -1:
+            split_pos = MAX_MESSAGE_LENGTH
+
+        chunks.append(message[:split_pos])
+        message = message[split_pos:].lstrip()
+
+    if message:
+        chunks.append(message)
+
+    for chunk in chunks:
+        try:
+            response = requests.post(
+                f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+                json={
+                    "chat_id": TELEGRAM_CHAT_ID,
+                    "text": chunk,
+                },
+                timeout=60,
+            )
+
+            # Rate Limit
+            if response.status_code == 429:
+                retry_after = response.json().get(
+                    "parameters", {}
+                ).get("retry_after", 5)
+
+                print(
+                    f"Telegram 429 발생, {retry_after}초 후 재시도"
+                )
+
+                time.sleep(retry_after)
+
+                requests.post(
+                    f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+                    json={
+                        "chat_id": TELEGRAM_CHAT_ID,
+                        "text": chunk,
+                    },
+                    timeout=60,
+                )
+
+            elif response.status_code != 200:
+                print(
+                    f"Telegram 오류: {response.status_code}"
+                )
+                print(response.text)
+
+        except Exception as e:
+            print(f"Telegram 전송 실패: {e}")
+
+        time.sleep(0.5)
+        
 
 def clean_plan_text(text):
     # 맨 앞 별점 제거 (예: 4.5 /음성기본 100GB+5Mbps_24개월/ 월 100GB + 5Mbps/ 통화 무제한/ 문자 무제한/ LG U+망/ LTE/ 월 25,600원 24개월 이후 47,080원/ 2,269명이 선택)
