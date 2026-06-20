@@ -10,19 +10,69 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 tele_msg = ""
 
+
 def send_telegram(message: str):
     if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
         print(message)
         return
 
-    requests.post(
-        f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-        json={
-            "chat_id": TELEGRAM_CHAT_ID,
-            "text": message,
-        },
-        timeout=60,
-    )
+    chunks = []
+
+    while len(message) > 4000:
+        split_pos = message.rfind("\n", 0, MAX_MESSAGE_LENGTH)
+
+        if split_pos == -1:
+            split_pos = MAX_MESSAGE_LENGTH
+
+        chunks.append(message[:split_pos])
+        message = message[split_pos:].lstrip()
+
+    if message:
+        chunks.append(message)
+
+    # 전송
+    for chunk in chunks:
+        try:
+            response = requests.post(
+                f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+                json={
+                    "chat_id": TELEGRAM_CHAT_ID,
+                    "text": chunk,
+                },
+                timeout=60,
+            )
+
+            # Rate Limit
+            if response.status_code == 429:
+                retry_after = response.json().get(
+                    "parameters", {}
+                ).get("retry_after", 5)
+
+                print(
+                    f"Telegram 429 발생, {retry_after}초 후 재시도"
+                )
+
+                time.sleep(retry_after)
+
+                requests.post(
+                    f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+                    json={
+                        "chat_id": TELEGRAM_CHAT_ID,
+                        "text": chunk,
+                    },
+                    timeout=60,
+                )
+
+            elif response.status_code != 200:
+                print(
+                    f"Telegram 오류: {response.status_code}"
+                )
+                print(response.text)
+
+        except Exception as e:
+            print(f"Telegram 전송 실패: {e}")
+
+        time.sleep(0.5)
 
 
 def get_products():
