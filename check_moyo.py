@@ -84,7 +84,7 @@ def send_telegram(message: str):
         except Exception as e:
             print(f"Telegram 전송 실패: {e}")
 
-        time.sleep(0.5)
+        time.sleep(1)
         
 
 def clean_plan_text(text):
