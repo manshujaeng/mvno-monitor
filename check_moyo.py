@@ -3,6 +3,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import re
+import time
 
 url = (
     "https://www.moyoplan.com/plans"
