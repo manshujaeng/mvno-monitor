@@ -94,32 +94,40 @@ def get_products():
             "sortDirection": "DESC",
         }
 
-        try:
-            print("MVNOHub 요청 시작...")
-            response = requests.get(
-                URL,
-                params=params,
-                headers={
-                    "User-Agent": "Mozilla/5.0",
-                    "Referer": "https://www.mvnohub.kr/product/products.do",
-                },
-                timeout=120,
-            )
-            response.raise_for_status()
-            print(f"MVNOHub 응답 수신: {response.status_code}")
+        print("MVNOHub 요청 시작...")
+        for attempt in range(3):  # 스케줄 실행 시 타임아웃 에러가 너무 자주 발생, 3회 시도
+            try:
+                response = requests.get(
+                    URL,
+                    params=params,
+                    headers={
+                        "User-Agent": (
+                            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                            "AppleWebKit/537.36 (KHTML, like Gecko) "
+                            "Chrome/137.0.0.0 Safari/537.36"
+                        ),
+                        "Referer": "https://www.mvnohub.kr/product/products.do",
+                    },
+                    timeout=30,
+                )
+                response.raise_for_status()
+                print(f"MVNOHub 응답 수신: {response.status_code}")
+                break
+                
+            except Exception as e:
+                print(f"{attempt+1}회 실패: {e}")
         
-        except Exception as e:
-            print(f"MVNOHub 요청 실패: {type(e).__name__} \n{e}")
-            send_telegram(f"MVNOHub 요청 실패: {e}")
-            return {}
+                if attempt < 2:
+                    time.sleep(30)
+                else:
+                    send_telegram(f"MVNOHub 요청 실패: {type(e).__name__} \n{e}")
+                    return {}
         
         content = response.json()["pageResult"]["content"]
 
-        if not content:
-            break
+        if not content: break
 
         for p in content:
-
             product_id = str(p["productId"])
 
             products[product_id] = {
@@ -133,8 +141,7 @@ def get_products():
                 "contractDiscountPeriod": p["contractDiscountPeriod"],
             }
 
-        if len(content) < 100:
-            break
+        if len(content) < 100: break
 
         page += 1
 
