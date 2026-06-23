@@ -87,7 +87,7 @@ def get_products():
             "minPrice": 0,
             "maxPrice": 30000,
             "dataRanges[0].min": 31,
-            "saleMonthRanges[0].min": 24,
+            #"saleMonthRanges[0].min": 24, # 24개월 이상만 추출됨, 다 출해서 걸러냄
             "page": page,
             "size": 100,
             "sortBy": "product.updatedAt",
@@ -128,8 +128,8 @@ def get_products():
         if not content: break
 
         for p in content:
+            if str(p["contractDiscountPeriod"]) not in ("24", "0"): continue  # 24개월 평생요금(0월)만 추출
             product_id = str(p["productId"])
-
             products[product_id] = {
                 "productId": p["productId"],
                 "partnerName": p["partnerName"],
@@ -138,10 +138,12 @@ def get_products():
                 "networkProtocol": p["networkProtocol"],
                 "monthlyPaymentFee": p["monthlyPaymentFee"],
                 "data": p["data"],
+                "dataAfter": p["dataAfter"],
                 "contractDiscountPeriod": p["contractDiscountPeriod"],
-            }
+                "contractDiscountAmount": p["contractDiscountAmount"],
+            }   
 
-        if len(content) < 100: break
+        if len(content) < 100: break  # 한페이지에 요금제 갯수가 100개 이하면 다음페이지 볼 필요 없으니 break
 
         page += 1
 
@@ -169,14 +171,23 @@ def save_state(data):
 
 
 def format_product(p):
+    if str(p["contractDiscountPeriod"]) == "0":
+        after_fee_text = " (평생)"
+    else:
+        after_fee = (p["monthlyPaymentFee"]+p["contractDiscountAmount"])
+        after_fee_text = (f"\n할인기간 : {p['contractDiscountPeriod']}개월 후 {after_fee:,}원")
 
+    if p["dataAfter"] == "0Mbps":
+        after_data = ""
+    else:
+        after_data = (f"+{p['dataAfter']}")
+        
     return (
         f"사업자 : {p['partnerName']}\n"
         f"상품명 : {p['productName']}\n"
         f"망 : {p['networkOperator']} {p['networkProtocol']}\n"
-        f"데이터 : {p['data']}GB\n"
-        f"요금 : {p['monthlyPaymentFee']:,}원\n"
-        f"할인기간 : {p['contractDiscountPeriod']}개월"
+        f"데이터 : {p['data']}GB{after_data}\n"
+        f"요금 : {p['monthlyPaymentFee']:,}원{after_fee_text}"
     )
 
 
