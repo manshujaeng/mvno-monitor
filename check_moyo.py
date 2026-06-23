@@ -9,8 +9,8 @@ url = (
     "https://www.moyoplan.com/plans"
     "?filters.data.includeUnlimited=true"
     "&filters.data.ranges.0.max=0&filters.data.ranges.0.min=30"
-    #"&filters.discounts.excludeLifetimeDiscount=false"
-    #"&filters.discounts.includeNoDiscount=false"
+    "&filters.discounts.excludeLifetimeDiscount=false"
+    "&filters.discounts.includeNoDiscount=true"  ## 평생요금제 포함 옵션
     "&filters.discounts.ranges.0.max=9999&filters.discounts.ranges.0.min=24"
     #"&filters.lowestFee.maxUnbounded=false"
     "&filters.lowestFee.ranges.0.max=30000&filters.lowestFee.ranges.0.min=0"
