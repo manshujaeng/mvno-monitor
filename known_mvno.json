@@ -1,13 +1,27 @@
 {
+  "7180": {
+    "productId": 7180,
+    "partnerName": "찬스모바일",
+    "productName": "(찬스 평생할인 요금제 모음) 6월 통신비 감량 프로젝트",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 29900,
+    "data": 95,
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
+  },
   "7148": {
     "productId": 7148,
     "partnerName": "찬스모바일",
-    "productName": "(찬스 5G 요금제 모음) 6월 통신비 감량 프로젝트test",
+    "productName": "(찬스 5G 요금제 모음) 6월 통신비 감량 프로젝트",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
     "monthlyPaymentFee": 23500,
     "data": 125,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 31500
   },
   "7145": {
     "productId": 7145,
@@ -17,7 +31,9 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 23500,
     "data": 125,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 31500
   },
   "7063": {
     "productId": 7063,
@@ -27,7 +43,9 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 23500,
     "data": 125,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 31500
   },
   "6981": {
     "productId": 6981,
@@ -37,7 +55,9 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 24100,
     "data": 150,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 38900
   },
   "6980": {
     "productId": 6980,
@@ -47,7 +67,9 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 23900,
     "data": 125,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 35500
   },
   "6979": {
     "productId": 6979,
@@ -57,7 +79,21 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 23500,
     "data": 95,
-    "contractDiscountPeriod": 24
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30400
+  },
+  "6978": {
+    "productId": 6978,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 데이터95GB+3Mbps",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 27000,
+    "data": 95,
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
   },
   "6976": {
     "productId": 6976,
@@ -67,7 +103,9 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 18720,
     "data": 95,
-    "contractDiscountPeriod": 24
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 29700
   },
   "6975": {
     "productId": 6975,
@@ -77,7 +115,9 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 19950,
     "data": 125,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30250
   },
   "6971": {
     "productId": 6971,
@@ -87,7 +127,9 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 26400,
     "data": 150,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 27500
   },
   "6912": {
     "productId": 6912,
@@ -97,7 +139,9 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 26400,
     "data": 150,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 27500
   },
   "6906": {
     "productId": 6906,
@@ -107,7 +151,9 @@
     "networkProtocol": "LTE",
     "monthlyPaymentFee": 22990,
     "data": 100,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 24970
   },
   "6570": {
     "productId": 6570,
@@ -117,7 +163,9 @@
     "networkProtocol": "LTE",
     "monthlyPaymentFee": 28050,
     "data": 100,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 17050
   },
   "6278": {
     "productId": 6278,
@@ -127,7 +175,21 @@
     "networkProtocol": "5G",
     "monthlyPaymentFee": 26400,
     "data": 95,
-    "contractDiscountPeriod": 24
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 22000
+  },
+  "6055": {
+    "productId": 6055,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]무한100GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 26900,
+    "data": 100,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
   },
   "5493": {
     "productId": 5493,
@@ -137,7 +199,33 @@
     "networkProtocol": "LTE",
     "monthlyPaymentFee": 25600,
     "data": 100,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 21480
+  },
+  "5490": {
+    "productId": 5490,
+    "partnerName": "찬스모바일",
+    "productName": "[평생할인]음성기본 100GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 29800,
+    "data": 100,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
+  },
+  "5469": {
+    "productId": 5469,
+    "partnerName": "찬스모바일",
+    "productName": "알찬 5G 음성기본 95GB+3Mbps",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 29900,
+    "data": 95,
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": null
   },
   "5095": {
     "productId": 5095,
@@ -147,6 +235,8 @@
     "networkProtocol": "LTE",
     "monthlyPaymentFee": 26000,
     "data": 100,
-    "contractDiscountPeriod": 24
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 20200
   }
 }
