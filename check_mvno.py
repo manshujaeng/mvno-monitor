@@ -187,7 +187,7 @@ def format_product(p):
         f"상품명 : {p['productName']}\n"
         f"망 : {p['networkOperator']} {p['networkProtocol']}\n"
         f"데이터 : {p['data']}GB{after_data}\n"
-        f"요금 : {p['monthlyPaymentFee']:,}원{after_fee_text}"
+        f"요금 : {p['monthlyPaymentFee']:,}원{after_fee_text}\n\n"
     )
 
 
