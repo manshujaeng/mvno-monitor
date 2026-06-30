@@ -181,6 +181,7 @@ def save_current(data):
 
 
 def main():
+    cnt = 0  #발송카운트
     current = get_plans()
     previous = load_previous()
     print(f"현재 요금제 수: {len(current)}")
@@ -194,6 +195,7 @@ def main():
             )
             #print(message)
             send_telegram(format_plan(message))
+            cnt+=1            
 
     # 변경
     for plan_id, text in current.items():
@@ -207,8 +209,12 @@ def main():
             )
             #print(message)
             send_telegram(format_plan(message))
+            cnt+=1
 
     save_current(current)
+
+    print(f"신규, 변경 요금제 수: {cnt}")
+    if cnt == 0: send_telegram('[모요] 신규 및 변경 요금제 정보 없음')  
 
 
 if __name__ == "__main__":
