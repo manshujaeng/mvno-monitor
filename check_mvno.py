@@ -87,14 +87,13 @@ def get_products():
             "minPrice": 0,
             "maxPrice": 30000,
             "dataRanges[0].min": 31,
-            #"saleMonthRanges[0].min": 24, # 24개월 이상만 추출됨, 다 출해서 걸러냄
+            #"saleMonthRanges[0].min": 24, # 24개월 이상만 추출됨, 평생이 누락, 다 출해서 걸러냄
             "page": page,
             "size": 100,
             "sortBy": "product.updatedAt",
             "sortDirection": "DESC",
         }
 
-        print("MVNOHub 요청 시작...")
         for attempt in range(3):  # 스케줄 실행 시 타임아웃 에러가 너무 자주 발생, 3회 시도
             try:
                 response = requests.get(
@@ -111,14 +110,14 @@ def get_products():
                     timeout=30,
                 )
                 response.raise_for_status()
-                print(f"MVNOHub 응답 수신: {response.status_code}")
+                print(f"MVNOHub 응답 수신({attempt+1}회 시도): {response.status_code}")
                 break
                 
             except Exception as e:
                 print(f"{attempt+1}회 실패: {e}")
         
                 if attempt < 2:
-                    time.sleep(30)
+                    time.sleep(60)
                 else:
                     send_telegram(f"MVNOHub 요청 실패: {type(e).__name__} \n{e}")
                     return {}
