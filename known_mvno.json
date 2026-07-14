@@ -77,11 +77,11 @@
     "productName": "(찬스 5G 요금제 할인 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 24750,
+    "monthlyPaymentFee": 24450,
     "data": 125,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30250
+    "contractDiscountAmount": 30550
   },
   "7318": {
     "productId": 7318,
@@ -89,11 +89,11 @@
     "productName": "(찬스 24개월 할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 24750,
+    "monthlyPaymentFee": 24450,
     "data": 125,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30250
+    "contractDiscountAmount": 30550
   },
   "7316": {
     "productId": 7316,
@@ -113,11 +113,11 @@
     "productName": "(찬스 7월 특가 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 24750,
+    "monthlyPaymentFee": 24450,
     "data": 125,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30250
+    "contractDiscountAmount": 30550
   },
   "7063": {
     "productId": 7063,
@@ -125,11 +125,11 @@
     "productName": "[24개월할인] L_5G 음성기본 125GB+5Mbps",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 24750,
+    "monthlyPaymentFee": 24450,
     "data": 125,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30250
+    "contractDiscountAmount": 30550
   },
   "6981": {
     "productId": 6981,
