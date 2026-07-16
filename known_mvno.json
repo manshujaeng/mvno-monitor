@@ -1,4 +1,28 @@
 {
+  "7474": {
+    "productId": 7474,
+    "partnerName": "찬스모바일",
+    "productName": "(찬스 24개월 할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 38400
+  },
+  "7473": {
+    "productId": 7473,
+    "partnerName": "찬스모바일",
+    "productName": "(찬스 평생할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 27500,
+    "data": 100,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
+  },
   "7421": {
     "productId": 7421,
     "partnerName": "찬스모바일",
@@ -35,30 +59,6 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 18040
   },
-  "7349": {
-    "productId": 7349,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 24개월 할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 25400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 38400
-  },
-  "7347": {
-    "productId": 7347,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 7월 특가 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 25400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 38400
-  },
   "7323": {
     "productId": 7323,
     "partnerName": "찬스모바일",
@@ -70,54 +70,6 @@
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 38400
-  },
-  "7320": {
-    "productId": 7320,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 5G 요금제 할인 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 24450,
-    "data": 125,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30550
-  },
-  "7318": {
-    "productId": 7318,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 24개월 할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 24450,
-    "data": 125,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30550
-  },
-  "7316": {
-    "productId": 7316,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 평생할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27500,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
-  },
-  "7313": {
-    "productId": 7313,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 7월 특가 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 24450,
-    "data": 125,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30550
   },
   "7063": {
     "productId": 7063,
