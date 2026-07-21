@@ -23,30 +23,6 @@
     "contractDiscountPeriod": 0,
     "contractDiscountAmount": 0
   },
-  "7421": {
-    "productId": 7421,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 24개월 할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 25400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 38400
-  },
-  "7420": {
-    "productId": 7420,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 평생할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27500,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
-  },
   "7352": {
     "productId": 7352,
     "partnerName": "이지모바일",
