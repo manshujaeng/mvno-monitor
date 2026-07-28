@@ -47,18 +47,6 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 39810
   },
-  "7473": {
-    "productId": 7473,
-    "partnerName": "찬스모바일",
-    "productName": "(찬스 평생할인 요금제 모음) 7월 여름휴가엔 데이터는 Up, 요금은 Down",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27500,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
-  },
   "7352": {
     "productId": 7352,
     "partnerName": "이지모바일",
@@ -215,29 +203,17 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 19180
   },
-  "5490": {
-    "productId": 5490,
-    "partnerName": "찬스모바일",
-    "productName": "[평생할인]음성기본 100GB+",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27500,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
-  },
   "5469": {
     "productId": 5469,
     "partnerName": "찬스모바일",
     "productName": "알찬 5G 음성기본 95GB+3Mbps",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 23300,
+    "monthlyPaymentFee": 22800,
     "data": 95,
     "dataAfter": "3Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 26200
+    "contractDiscountAmount": 26700
   },
   "5095": {
     "productId": 5095,
