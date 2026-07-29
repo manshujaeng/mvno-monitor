@@ -197,11 +197,11 @@
     "productName": "음성기본 100GB+5Mbps_24개월",
     "networkOperator": "LGU",
     "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27900,
+    "monthlyPaymentFee": 28490,
     "data": 100,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 19180
+    "contractDiscountAmount": 19470
   },
   "5469": {
     "productId": 5469,
