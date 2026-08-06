@@ -1,4 +1,28 @@
 {
+  "7609": {
+    "productId": 7609,
+    "partnerName": "찬스모바일",
+    "productName": "찬스모바일 8월 길게할인 24개월요금제 특가 모음",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 22790,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 32210
+  },
+  "7604": {
+    "productId": 7604,
+    "partnerName": "찬스모바일",
+    "productName": "찬스모바일 8월 속도 빠른 5G요금제 모음",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 22790,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 32210
+  },
   "7585": {
     "productId": 7585,
     "partnerName": "찬스모바일",
@@ -13,18 +37,6 @@
   },
   "7583": {
     "productId": 7583,
-    "partnerName": "찬스모바일",
-    "productName": "찬스모바일 8월 길게할인 24개월요금제 모음",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 22650,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 40160
-  },
-  "7523": {
-    "productId": 7523,
     "partnerName": "찬스모바일",
     "productName": "찬스모바일 8월 길게할인 24개월요금제 모음",
     "networkOperator": "LGU",
@@ -101,11 +113,11 @@
     "productName": "[L]5G 데이터150GB+",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 22900,
+    "monthlyPaymentFee": 22500,
     "data": 150,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 40100
+    "contractDiscountAmount": 40500
   },
   "6980": {
     "productId": 6980,
@@ -113,11 +125,11 @@
     "productName": "[L]5G 데이터125GB+5Mbps",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 22800,
+    "monthlyPaymentFee": 22400,
     "data": 125,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 36600
+    "contractDiscountAmount": 37000
   },
   "6978": {
     "productId": 6978,
@@ -125,11 +137,11 @@
     "productName": "[L]5G 데이터95GB+3Mbps",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 22600,
+    "monthlyPaymentFee": 22300,
     "data": 95,
     "dataAfter": "3Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 33500
+    "contractDiscountAmount": 33800
   },
   "6971": {
     "productId": 6971,
