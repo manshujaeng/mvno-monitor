@@ -1,4 +1,16 @@
 {
+  "7642": {
+    "productId": 7642,
+    "partnerName": "찬스모바일",
+    "productName": "찬스모바일 8월 길게할인 24개월요금제 특가 모음",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 22400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 40410
+  },
   "7629": {
     "productId": 7629,
     "partnerName": "찬스모바일",
