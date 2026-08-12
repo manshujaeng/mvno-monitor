@@ -1,4 +1,52 @@
 {
+  "7654": {
+    "productId": 7654,
+    "partnerName": "A모바일(에넥스텔레콤)",
+    "productName": "A모바일 5G 평생 요금제!",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25000,
+    "data": 95,
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
+  },
+  "7653": {
+    "productId": 7653,
+    "partnerName": "A모바일(에넥스텔레콤)",
+    "productName": "5G 150GB+5Mbps (평생)",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25500,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
+  },
+  "7652": {
+    "productId": 7652,
+    "partnerName": "A모바일(에넥스텔레콤)",
+    "productName": "5G 125GB+5Mbps (평생)",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25300,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
+  },
+  "7651": {
+    "productId": 7651,
+    "partnerName": "A모바일(에넥스텔레콤)",
+    "productName": "5G 95GB+3Mbps (평생)",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25000,
+    "data": 95,
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
+  },
   "7642": {
     "productId": 7642,
     "partnerName": "찬스모바일",
