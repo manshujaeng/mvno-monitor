@@ -1,4 +1,16 @@
 {
+  "7658": {
+    "productId": 7658,
+    "partnerName": "찬스모바일",
+    "productName": "찬스모바일 8월 24개월요금제 특가",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 22400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 40410
+  },
   "7654": {
     "productId": 7654,
     "partnerName": "A모바일(에넥스텔레콤)",
@@ -125,7 +137,7 @@
     "productName": "5G 티플온 150GB+",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 27400,
+    "monthlyPaymentFee": 26400,
     "data": 150,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 0,
