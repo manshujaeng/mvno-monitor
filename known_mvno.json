@@ -1,4 +1,16 @@
 {
+  "7688": {
+    "productId": 7688,
+    "partnerName": "찬스모바일",
+    "productName": "찬스모바일 8월 특가",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 22400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 40410
+  },
   "7671": {
     "productId": 7671,
     "partnerName": "찬스모바일",
@@ -202,18 +214,6 @@
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 21340
-  },
-  "7505": {
-    "productId": 7505,
-    "partnerName": "KCT (티플러스)",
-    "productName": "5G 티플온 150GB+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 26400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
   },
   "7352": {
     "productId": 7352,
