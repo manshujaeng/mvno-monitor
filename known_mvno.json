@@ -35,42 +35,6 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 40410
   },
-  "7668": {
-    "productId": 7668,
-    "partnerName": "프리티 (LGU+망)",
-    "productName": "(LGU+)프리티 편의점금액권 5000 150G+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 28820,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 44880
-  },
-  "7667": {
-    "productId": 7667,
-    "partnerName": "프리티 (LGU+망)",
-    "productName": "(LGU+)프리티 편의점금액권 5000 125G+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 27610,
-    "data": 125,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 35090
-  },
-  "7666": {
-    "productId": 7666,
-    "partnerName": "프리티 (LGU+망)",
-    "productName": "(LGU+)프리티 편의점금액권 5000 95G+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 27500,
-    "data": 95,
-    "dataAfter": "3Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 34100
-  },
   "7658": {
     "productId": 7658,
     "partnerName": "찬스모바일",
@@ -203,18 +167,6 @@
     "contractDiscountPeriod": 0,
     "contractDiscountAmount": 0
   },
-  "7589": {
-    "productId": 7589,
-    "partnerName": "프리티 (LGU+망)",
-    "productName": "(LGU+)프리티데이터 매일5G+",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 28160,
-    "data": null,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 21340
-  },
   "7352": {
     "productId": 7352,
     "partnerName": "이지모바일",
@@ -238,18 +190,6 @@
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 40410
-  },
-  "7223": {
-    "productId": 7223,
-    "partnerName": "프리티 (LGU+망)",
-    "productName": "(LGU+)프리티 편의점금액권 5000 100G+",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 29260,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 33440
   },
   "7063": {
     "productId": 7063,
