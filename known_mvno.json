@@ -1,4 +1,16 @@
 {
+  "7713": {
+    "productId": 7713,
+    "partnerName": "찬스모바일",
+    "productName": "찬스모바일 24개월 추천 요금제~",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 22400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 40410
+  },
   "7671": {
     "productId": 7671,
     "partnerName": "찬스모바일",
@@ -154,6 +166,18 @@
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 32621
+  },
+  "6981": {
+    "productId": 6981,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 데이터150GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 24900,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
   },
   "6980": {
     "productId": 6980,
