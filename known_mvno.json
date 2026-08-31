@@ -1,16 +1,4 @@
 {
-  "7713": {
-    "productId": 7713,
-    "partnerName": "찬스모바일",
-    "productName": "찬스모바일 24개월 추천 요금제~",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 22400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 40410
-  },
   "7671": {
     "productId": 7671,
     "partnerName": "찬스모바일",
@@ -92,30 +80,6 @@
     "monthlyPaymentFee": 25000,
     "data": 95,
     "dataAfter": "3Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
-  },
-  "7629": {
-    "productId": 7629,
-    "partnerName": "찬스모바일",
-    "productName": "찬스모바일 8월 평생할인 특가 모음",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 28450,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
-  },
-  "7616": {
-    "productId": 7616,
-    "partnerName": "찬스모바일",
-    "productName": "[평생할인]100GB+5mbps",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 28450,
-    "data": 100,
-    "dataAfter": "5Mbps",
     "contractDiscountPeriod": 0,
     "contractDiscountAmount": 0
   },
