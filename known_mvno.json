@@ -1,16 +1,4 @@
 {
-  "7957": {
-    "productId": 7957,
-    "partnerName": "찬스모바일",
-    "productName": "24개월 안심 요금제<2년동안 가격 변동zero>",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 22379,
-    "data": 125,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 32621
-  },
   "7819": {
     "productId": 7819,
     "partnerName": "유니컴즈",
@@ -143,18 +131,6 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 20240
   },
-  "7505": {
-    "productId": 7505,
-    "partnerName": "KCT (티플러스)",
-    "productName": "5G 티플온 150GB+_평생프로모션!",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 25900,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
-  },
   "7352": {
     "productId": 7352,
     "partnerName": "이지모바일",
@@ -173,11 +149,11 @@
     "productName": "5G 음성기본 150GB+(24개월)",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 22400,
+    "monthlyPaymentFee": 26600,
     "data": 150,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 40410
+    "contractDiscountAmount": 36210
   },
   "7063": {
     "productId": 7063,
@@ -185,11 +161,11 @@
     "productName": "[24개월할인] L_5G 음성기본 125GB+5Mbps",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 22379,
+    "monthlyPaymentFee": 28200,
     "data": 125,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 32621
+    "contractDiscountAmount": 26800
   },
   "6981": {
     "productId": 6981,
@@ -269,11 +245,11 @@
     "productName": "음성기본 100GB+5Mbps_24개월",
     "networkOperator": "LGU",
     "networkProtocol": "LTE",
-    "monthlyPaymentFee": 28490,
+    "monthlyPaymentFee": 29000,
     "data": 100,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 19470
+    "contractDiscountAmount": 18960
   },
   "5469": {
     "productId": 5469,
@@ -281,11 +257,11 @@
     "productName": "알찬 5G 음성기본 95GB+3Mbps",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 22580,
+    "monthlyPaymentFee": 28200,
     "data": 95,
     "dataAfter": "3Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 26920
+    "contractDiscountAmount": 21300
   },
   "5095": {
     "productId": 5095,
