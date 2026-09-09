@@ -11,6 +11,30 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 36210
   },
+  "7818": {
+    "productId": 7818,
+    "partnerName": "유니컴즈",
+    "productName": "[L] 5G 데이터 125GB+_2y_plus",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 30000,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 23900
+  },
+  "7809": {
+    "productId": 7809,
+    "partnerName": "유니컴즈",
+    "productName": "[L] 5G 데이터 95GB+_2y_plus",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 30000,
+    "data": 95,
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 25300
+  },
   "7797": {
     "productId": 7797,
     "partnerName": "A모바일(에넥스텔레콤)",
@@ -53,47 +77,11 @@
     "productName": "(LGU+)프리티 편의점금액권 5000 150G+",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 26730,
+    "monthlyPaymentFee": 29920,
     "data": 150,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 46970
-  },
-  "7667": {
-    "productId": 7667,
-    "partnerName": "프리티 (LGU+망)",
-    "productName": "(LGU+)프리티 편의점금액권 5000 125G+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 27170,
-    "data": 125,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 35530
-  },
-  "7666": {
-    "productId": 7666,
-    "partnerName": "프리티 (LGU+망)",
-    "productName": "(LGU+)프리티 편의점금액권 5000 95G+",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 27170,
-    "data": 95,
-    "dataAfter": "3Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 34430
-  },
-  "7589": {
-    "productId": 7589,
-    "partnerName": "프리티 (LGU+망)",
-    "productName": "(LGU+)프리티데이터 매일5G+",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 29260,
-    "data": null,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 20240
+    "contractDiscountAmount": 43780
   },
   "7352": {
     "productId": 7352,
@@ -131,41 +119,41 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 26800
   },
-  "6971": {
-    "productId": 6971,
-    "partnerName": "아시아모바일",
-    "productName": "아시아 5G 통화기본 150GB+",
+  "6981": {
+    "productId": 6981,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 데이터150GB+",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 26400,
+    "monthlyPaymentFee": 27900,
     "data": 150,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 27500
+    "contractDiscountAmount": 35100
   },
-  "6278": {
-    "productId": 6278,
-    "partnerName": "아시아모바일",
-    "productName": "아시아 5G 통화기본 95GB+",
+  "6980": {
+    "productId": 6980,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 데이터125GB+5Mbps",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 26620,
+    "monthlyPaymentFee": 27800,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 31600
+  },
+  "6978": {
+    "productId": 6978,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 데이터95GB+3Mbps",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 27600,
     "data": 95,
     "dataAfter": "3Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 21780
-  },
-  "6055": {
-    "productId": 6055,
-    "partnerName": "아이즈모바일",
-    "productName": "[L]무한100GB+",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 28500,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
+    "contractDiscountAmount": 28500
   },
   "5493": {
     "productId": 5493,
