@@ -191,18 +191,6 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 43780
   },
-  "7505": {
-    "productId": 7505,
-    "partnerName": "KCT (티플러스)",
-    "productName": "5G 티플온 150GB+_평생프로모션!",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 29400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 0,
-    "contractDiscountAmount": 0
-  },
   "7352": {
     "productId": 7352,
     "partnerName": "이지모바일",
