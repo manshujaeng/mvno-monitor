@@ -59,6 +59,54 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 23800
   },
+  "7819": {
+    "productId": 7819,
+    "partnerName": "유니컴즈",
+    "productName": "[L] 5G 데이터 150GB+_2y_plus",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 29000,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 31500
+  },
+  "7818": {
+    "productId": 7818,
+    "partnerName": "유니컴즈",
+    "productName": "[L] 5G 데이터 125GB+_2y_plus",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28500,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 25400
+  },
+  "7815": {
+    "productId": 7815,
+    "partnerName": "유니컴즈",
+    "productName": "[L] 데이터 100GB+_24개월",
+    "networkOperator": "LGU",
+    "networkProtocol": "LTE",
+    "monthlyPaymentFee": 28000,
+    "data": 100,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 25900
+  },
+  "7809": {
+    "productId": 7809,
+    "partnerName": "유니컴즈",
+    "productName": "[L] 5G 데이터 95GB+_2y_plus",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28500,
+    "data": 95,
+    "dataAfter": "3Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
   "7668": {
     "productId": 7668,
     "partnerName": "프리티 (LGU+망)",
