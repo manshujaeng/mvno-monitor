@@ -1,4 +1,16 @@
 {
+  "8460": {
+    "productId": 8460,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제<2년동안 가격 변동zero>",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30700
+  },
   "8429": {
     "productId": 8429,
     "partnerName": "유니컴즈",
@@ -10,18 +22,6 @@
     "dataAfter": "10Mbps",
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 32200
-  },
-  "8379": {
-    "productId": 8379,
-    "partnerName": "찬스모바일",
-    "productName": "2년 동안 가격 변동 없이 안심 요금제~",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 28200,
-    "data": 125,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 26800
   },
   "8233": {
     "productId": 8233,
