@@ -1,4 +1,64 @@
 {
+  "8565": {
+    "productId": 8565,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30700
+  },
+  "8559": {
+    "productId": 8559,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제<2년동안 가격 변동zero>",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30700
+  },
+  "8538": {
+    "productId": 8538,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제<2년동안 가격 변동zero>",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30700
+  },
+  "8521": {
+    "productId": 8521,
+    "partnerName": "찬스모바일",
+    "productName": "2년동안 가격 변동zero",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30700
+  },
+  "8516": {
+    "productId": 8516,
+    "partnerName": "아이즈모바일",
+    "productName": "[L]5G 데이터180GB+",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 26000,
+    "data": 180,
+    "dataAfter": "10Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 41000
+  },
   "8460": {
     "productId": 8460,
     "partnerName": "찬스모바일",
