@@ -203,18 +203,6 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 20460
   },
-  "7352": {
-    "productId": 7352,
-    "partnerName": "이지모바일",
-    "productName": "이지 무제한 모음집!",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27200,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 19000
-  },
   "7323": {
     "productId": 7323,
     "partnerName": "찬스모바일",
@@ -331,30 +319,6 @@
     "networkProtocol": "LTE",
     "monthlyPaymentFee": 27200,
     "data": null,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 19000
-  },
-  "6090": {
-    "productId": 6090,
-    "partnerName": "이지모바일",
-    "productName": "[무제한]100GB+5Mbps 이지하게 시작~",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27200,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 19000
-  },
-  "6089": {
-    "productId": 6089,
-    "partnerName": "이지모바일",
-    "productName": "[무제한] 이지하게 시작~",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27200,
-    "data": 100,
     "dataAfter": "5Mbps",
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 19000
