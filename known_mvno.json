@@ -251,30 +251,6 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 24750
   },
-  "6329": {
-    "productId": 6329,
-    "partnerName": "이지모바일",
-    "productName": "[LG슈퍼헤비]100GB+5Mbps로 끊김없는 무제한",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27200,
-    "data": 100,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 19000
-  },
-  "6328": {
-    "productId": 6328,
-    "partnerName": "이지모바일",
-    "productName": "[LG슈퍼헤비]매일5G+5Mbps 초고속 스피드!",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27200,
-    "data": null,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 19000
-  },
   "6278": {
     "productId": 6278,
     "partnerName": "아시아모바일",
@@ -286,18 +262,6 @@
     "dataAfter": "3Mbps",
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 19800
-  },
-  "6091": {
-    "productId": 6091,
-    "partnerName": "이지모바일",
-    "productName": "[무제한]매일5GB+5Mbps 이지하게 시작~",
-    "networkOperator": "LGU",
-    "networkProtocol": "LTE",
-    "monthlyPaymentFee": 27200,
-    "data": null,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 19000
   },
   "5493": {
     "productId": 5493,
