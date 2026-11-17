@@ -1,63 +1,27 @@
 {
-  "8708": {
-    "productId": 8708,
-    "partnerName": "찬스모바일",
-    "productName": "속도빠른 5G 요금제 최대할인~",
+  "8761": {
+    "productId": 8761,
+    "partnerName": "A모바일(에넥스텔레콤)",
+    "productName": "(24개월) 180GB+10Mbps 초특가 5G 요금제",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 28200,
-    "data": 125,
-    "dataAfter": "5Mbps",
+    "monthlyPaymentFee": 24500,
+    "data": 180,
+    "dataAfter": "10Mbps",
     "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 26800
+    "contractDiscountAmount": 33800
   },
-  "8565": {
-    "productId": 8565,
-    "partnerName": "찬스모바일",
-    "productName": "24개월 안심 요금제",
+  "8760": {
+    "productId": 8760,
+    "partnerName": "A모바일(에넥스텔레콤)",
+    "productName": "(평생) 180GB+10Mbps 초특가 5G 요금제",
     "networkOperator": "LGU",
     "networkProtocol": "5G",
-    "monthlyPaymentFee": 25400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30700
-  },
-  "8559": {
-    "productId": 8559,
-    "partnerName": "찬스모바일",
-    "productName": "24개월 안심 요금제<2년동안 가격 변동zero>",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 25400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30700
-  },
-  "8538": {
-    "productId": 8538,
-    "partnerName": "찬스모바일",
-    "productName": "24개월 안심 요금제<2년동안 가격 변동zero>",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 25400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30700
-  },
-  "8521": {
-    "productId": 8521,
-    "partnerName": "찬스모바일",
-    "productName": "2년동안 가격 변동zero",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 25400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30700
+    "monthlyPaymentFee": 27999,
+    "data": 180,
+    "dataAfter": "10Mbps",
+    "contractDiscountPeriod": 0,
+    "contractDiscountAmount": 0
   },
   "8516": {
     "productId": 8516,
@@ -70,18 +34,6 @@
     "dataAfter": "10Mbps",
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 41000
-  },
-  "8460": {
-    "productId": 8460,
-    "partnerName": "찬스모바일",
-    "productName": "24개월 안심 요금제<2년동안 가격 변동zero>",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 25400,
-    "data": 150,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 30700
   },
   "8429": {
     "productId": 8429,
