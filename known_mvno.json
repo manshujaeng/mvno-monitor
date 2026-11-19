@@ -59,18 +59,6 @@
     "contractDiscountPeriod": 24,
     "contractDiscountAmount": 22000
   },
-  "8172": {
-    "productId": 8172,
-    "partnerName": "KCT (티플러스)",
-    "productName": "5G 티플 125GB+_24개월프로모션",
-    "networkOperator": "LGU",
-    "networkProtocol": "5G",
-    "monthlyPaymentFee": 24900,
-    "data": 125,
-    "dataAfter": "5Mbps",
-    "contractDiscountPeriod": 24,
-    "contractDiscountAmount": 27900
-  },
   "8000": {
     "productId": 8000,
     "partnerName": "찬스모바일",
