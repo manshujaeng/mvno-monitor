@@ -1,4 +1,40 @@
 {
+  "8860": {
+    "productId": 8860,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30700
+  },
+  "8843": {
+    "productId": 8843,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 25400,
+    "data": 150,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 30700
+  },
+  "8842": {
+    "productId": 8842,
+    "partnerName": "찬스모바일",
+    "productName": "11월 놓치면 후회 특가 요금제~",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28200,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
   "8761": {
     "productId": 8761,
     "partnerName": "A모바일(에넥스텔레콤)",
