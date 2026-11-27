@@ -1,4 +1,88 @@
 {
+  "9061": {
+    "productId": 9061,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28200,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
+  "9033": {
+    "productId": 9033,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28200,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
+  "9024": {
+    "productId": 9024,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28200,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
+  "9008": {
+    "productId": 9008,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28200,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
+  "8997": {
+    "productId": 8997,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28200,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
+  "8988": {
+    "productId": 8988,
+    "partnerName": "찬스모바일",
+    "productName": "속도빠른 5G 요금제 최대할인~",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28200,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
+  "8986": {
+    "productId": 8986,
+    "partnerName": "찬스모바일",
+    "productName": "24개월 안심 요금제",
+    "networkOperator": "LGU",
+    "networkProtocol": "5G",
+    "monthlyPaymentFee": 28200,
+    "data": 125,
+    "dataAfter": "5Mbps",
+    "contractDiscountPeriod": 24,
+    "contractDiscountAmount": 26800
+  },
   "8980": {
     "productId": 8980,
     "partnerName": "찬스모바일",
